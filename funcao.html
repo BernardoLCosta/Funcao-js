@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>funçãoJS</title>
+    <title>Validação de Texto</title>
+    <style>
+        /* Estilização do texto de erro */
+        #error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
- 
-    <input type="text" id="usernameInput">
-<div id="error" style="color: red;"></div>
-<script src="funcao.js"></script>
+    <h1>Insira um texto</h1>
+    <form id="textInputForm">
+        <input type="text" id="usernameInput" placeholder="Digite aqui">
+        <button type="button" id="submitButton">Enviar</button>
+    </form>
+    <!-- Div para exibir mensagem de erro -->
+    <div id="error"></div>
+    <!-- Div para exibir o texto digitado -->
+    <div id="displayText"></div>
+
+    <!-- Script JavaScript -->
+    <script src="funcao.js"></script>
 </body>
 </html>
